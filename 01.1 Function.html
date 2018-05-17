@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div1{
+            width:200px;
+            height:100px;
+            background:#CCC;
+        }
+    </style>
+    <script>
+
+        function toRed() {
+            var oDiv = document.getElementById('div1');
+            oDiv.style.background='red';
+            oDiv.style.width='200px';
+            oDiv.style.height='100px';
+        }
+        function toGreen() {
+            var oDiv = document.getElementById('div1');
+            oDiv.style.background='green';
+            oDiv.style.width='200px';
+            oDiv.style.height='200px';
+        }
+    </script>
+</head>
+<body>
+<input type = "checkbox" onmouseover="toRed()" onmouseout="toGreen()"/>
+<div id="div1">
+    为了您的信息安全。。。
+</div>
+<input type = "button" value="按钮" onclick="alert('这是个警告!');" />
+</body>
+</html>

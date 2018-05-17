@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parameter</title>
+    <style>
+        #div1{
+            background: red;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+    <script>
+        function changeColor(color) {
+            oDiv = document.getElementById("div1");
+            oDiv.style.background=color;
+        }
+    </script>
+</head>
+
+<body>
+<input type="button" value="变绿" onclick="changeColor('green')"/>
+<input type="button" value="变黑" onclick="changeColor('black')"/>
+<input type="button" value="变红" onclick="changeColor('red')"/>
+<div id="div1"></div>
+</body>
+</html>
